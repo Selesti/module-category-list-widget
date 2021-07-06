@@ -82,7 +82,7 @@ class Decorator extends \Magento\Framework\App\Helper\AbstractHelper
             $classes[] = 'has-collapsed';
         }
 
-        return implode(array_unique($classes), ' ');
+        return implode(' ',array_unique($classes));
     }
 
     /**
@@ -101,6 +101,6 @@ class Decorator extends \Magento\Framework\App\Helper\AbstractHelper
             }
         }
 
-        return implode(array_unique($classes), ' ');
+        return implode(' ',array_unique($classes));
     }
 }
